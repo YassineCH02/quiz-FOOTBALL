@@ -1,0 +1,96 @@
+/* Sfondo e stile generale */
+body {
+    background-color: #000000; /* Sfondo nero */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* Testo bianco */
+}
+
+/* Stile del titolo */
+h1 {
+    text-align: center;
+    color: #ff4500; /* Colore del titolo: rosso/arancione */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+/* Contenitore del quiz */
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1c1c1c; /* Contenitore scuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 69, 0, 0.5); /* Ombra rossa */
+    line-height: 1.6;
+}
+
+/* Stile per le immagini delle domande */
+.question-image {
+    width: 100%;
+    max-width: 500px; /* Dimensione massima per uniformità */
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 69, 0, 0.2); /* Ombra leggera */
+}
+
+/* Stile per le risposte multiple */
+label {
+    display: block;
+    font-size: 18px;
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333333; /* Sfondo grigio scuro */
+    color: #ffffff; /* Testo bianco */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+label:hover {
+    background-color: #ff4500; /* Colore rosso/arancione al passaggio del mouse */
+    color: #000;
+}
+
+/* Risposta selezionata */
+input[type="radio"]:checked + label {
+    background-color: #ffa07a; /* Arancione chiaro */
+    border-color: #ff4500;
+    font-weight: bold;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+/* Stile del pulsante */
+button {
+    background-color: #ff4500;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e63900;
+}
+
+button:active {
+    background-color: #cc3300;
+}
+
+/* Stile per l'immagine del risultato */
+.result-image {
+    width: 200px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(255, 69, 0, 0.5); /* Ombra rossa */
+}
